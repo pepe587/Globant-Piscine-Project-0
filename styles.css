@@ -1,0 +1,117 @@
+
+#title {
+    position: absolute;  
+    top: 0;              
+    left: 0;             
+    margin: 10px;
+}
+
+
+#score-lt {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    margin: 0;
+    font-size: 2rem;      
+    color: #333;          
+    font-weight: bold;    
+}
+
+#score {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    top: -10;             
+    margin: 0;
+    font-size: 2rem;      
+    color: #333;          
+    font-weight: bold;    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faf8ef;
+}
+
+#restart-btn {
+    background-color: #8f7a66;
+    color: #f9f6f2;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.tile {
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup {
+    display: none;  /* El pop-up estará oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#close-popup-btn {
+    margin-top: 20px;
+}
+
+.tile-2 { background-color: #eee4da; color: #776e65; }
+.tile-4 { background-color: #ede0c8; color: #776e65; }
+.tile-8 { background-color: #f2b179; color: #f9f6f2; }
+.tile-16 { background-color: #f59563; color: #f9f6f2; }
+.tile-32 { background-color: #f67c5f; color: #f9f6f2; }
+.tile-64 { background-color: #f65e3b; color: #f9f6f2; }
+.tile-128 { background-color: #edcf72; color: #f9f6f2; }
+.tile-256 { background-color: #edcc61; color: #f9f6f2; }
+.tile-512 { background-color: #edc850; color: #f9f6f2; }
+.tile-1024 { background-color: #edc53f; color: #f9f6f2; }
+.tile-2048 { background-color: #edc22e; color: #f9f6f2; }
+.tile-super { background-color: #3c3a32; color: #f9f6f2; }
